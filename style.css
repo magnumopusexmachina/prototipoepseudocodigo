@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --color-1:#2f3033;
+    --color-2:#fb8cf9;
+}
+
+body{
+    background-image: url('../css/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 12.5vh;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    background-color: rgb(73, 73, 73); 
+}
+
+.container-imagem{
+    height: 72px;
+    position: absolute;
+    z-index: 1;
+    align-items: start;
+    left: 87.5%;
+}
+
+header{
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 30px 70px;
+}
+
+.menu{
+    width: 100%;
+    background-color:#2f3033;
+    font-family: 'Montserrat', sans-serif;
+    position:re; 
+}
+
+menu ul{
+    list-style: none;
+    position:fixed;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    width: 50%;
+    align-self:flex-end;
+}
+
+.menu ul li{
+    float:inline-end;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+li:hover{
+    background-color: rgb(130, 130, 130);
+}
+
+.menu ul ul{
+    position:absolute;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #fff;
+}
+
+.menu ul ul li a{
+    background-color: solid 1px #fff;
+}
+
+label[for="bt_menu"]{
+    text-decoration: none;
+    display: none;
+    padding: 5px;
+    background-color:#fff;
+    color: #fff;
+    text-align: center;
+    cursor:pointer;
+    align-items: flex-end;
+}
+
+.a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-size: larger;
+    font-weight: 400px;
+    transition: 0.55;
+}
+
+.menu a:hover{
+    background-color: rgb(130, 130, 130);
+    border-bottom: solid 1px #fff;
+}
+
+.grid-container{
+    margin-bottom: 48px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat (auto-fit 200px, 1fr);
+    gap: 10px;
+    margin: 20px;   
+}
+
+.card{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius:30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.22), 
+    -5 -5 30px 7px rgba(0, 0, 0, 0.22);
+}
+
+.card:hover{
+    transform: scale (0.9, 0.9);
+    box-shadow: inset;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    border-radius:30px;
+    transition: 0.55;
+}
+
+.card .card-title{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 40px;
+    text-align: center;
+    border-radius: 0px 0px 40px 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+    margin-top: 80px;
+}
+
+.title-white{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+
+}
+
+.celula{
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    padding:20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.celula:hover{
+    background-color: rgb(130, 130, 130);
+}
+
+#caixa5{
+    grid-column: 1/5;
+    grid-row: 2/6;
+}
+
+#caixa6{
+    grid-column: 1/5;
+    grid-row: 6/6;
+}
+
+.container-icone{
+    height: 72px;
+    z-index: 1;
+    align-items: start;
+    right: 87.5%;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+
+#link2{
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+    font-size:50px; 
+}
+
+#link3{
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+    font-size:50px; 
+}
+
+table{
+    background: black;
+    background-image: url('../css/formulário.png');
+    background-size:auto;
+    background-position:center;
+    /*background-attachment: fixed;*/
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;  
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
